@@ -1,0 +1,25 @@
+.form {
+  position: relative;
+  padding-left: 88px;
+  &__group {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0;
+    border: 0;
+  }
+  &__error {
+    display: none;
+    margin-top: 4px;
+    font-size: @fs-small;
+    color: @c-2;
+  }
+  &__btn {
+    font-size: @fs-xmedium + 4px;
+  }
+}
+
+@media(max-width: @screen-xxs-max) {
+  .form {
+    padding-left: 0;
+  }
+}

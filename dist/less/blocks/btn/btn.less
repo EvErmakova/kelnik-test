@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid;
+  font-size: @fs-xmedium;
+  line-height: .9;
+  .ff-special;
+  color: @c-2;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  &:not(button) {
+    cursor: inherit;
+  }
+  &:hover, &:not(button) {
+    border-bottom-color: transparent;
+  }
+  &_big {
+    font-size: @fs-big;
+  }
+}

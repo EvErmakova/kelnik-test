@@ -1,0 +1,18 @@
+.input {
+  width: 100%;
+  max-width: 210px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 4px;
+  background: @c-4;
+  color: @c-1;
+  .ff-special;
+  font-size: @fs-medium;
+  transition: ease-in-out .2s;
+  &:focus {
+    background: lighten(@c-3, 20%);
+  }
+  &_error {
+    background: lighten(@c-2, 20%);
+  }
+}

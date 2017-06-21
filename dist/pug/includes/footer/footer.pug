@@ -1,0 +1,11 @@
+.footer
+    .container
+        form.form(method="post" id="reg-form")
+            fieldset.form__group
+                label.label(for="email") Ваш Email:
+                input.input(type="email" id="email" name="email" required)
+                .form__error.js-form-error
+            fieldset.form__group
+                input.checkbox(type="checkbox" id="agreement" name="agreement")
+                label.checkbox__label(for="agreement") Подписаться на новости
+            button.btn.form__btn(type="submit") Зарегистрироваться

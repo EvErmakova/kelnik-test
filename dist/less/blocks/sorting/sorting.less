@@ -1,0 +1,45 @@
+.sorting {
+  padding: 10px 0 20px;
+  font-size: @fs-base + 1px;
+  text-align: center;
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin: 0 4px;
+    border-bottom: 1px dashed @c-2;
+    line-height: 1.2;
+    color: @c-2;
+    cursor: pointer;
+    transition: border-bottom-color ease-in-out .2s;
+    &:hover {
+      border-bottom-color: transparent;
+    }
+    &_top,
+    &_bottom {
+      margin-right: 16px;
+      &:after {
+        position: absolute;
+        top: 2px;
+        right: -14px;
+        font-size: @fs-small;
+        color: @c-1;
+      }
+    }
+    &_top {
+      &:after {
+        content: "\25b2";
+      }
+    }
+    &_bottom {
+      &:after {
+        content: "\25bc";
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .sorting {
+    padding-bottom: 0;
+  }
+}

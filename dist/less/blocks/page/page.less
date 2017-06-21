@@ -1,0 +1,33 @@
+.page {
+  position: relative;
+  min-height: 100%;
+  padding-top: 50px;
+  padding-bottom: @footer-height + 46px;
+  background: url('@{img}/pattern.jpg');
+  font: @fs-base/1.4 'Tahoma', Helvetica, sans-serif;
+  color: @c-1;
+  &__title {
+    margin: 0;
+    padding: 17px 0 16px;
+    background: url('@{img}logo.png') 49% 50% no-repeat;
+    background-size: contain;
+    font-size: @fs-xbig;
+    .ff-special;
+    text-align: center;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .page {
+    padding-top: 25px;
+    padding-bottom: @footer-height + 25px;
+  }
+}
+
+@media (max-width: @screen-xxs-max) {
+  .page {
+    &__title {
+      font-size: @fs-big;
+    }
+  }
+}

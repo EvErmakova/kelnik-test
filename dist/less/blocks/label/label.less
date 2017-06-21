@@ -1,0 +1,18 @@
+.label {
+  position: absolute;
+  top: 0;
+  left: -88px;
+  display: block;
+  width: 88px;
+  padding: 10px 12px 9px;
+  font-size: @fs-base + 1;
+  .ff-special;
+}
+
+@media(max-width: @screen-xxs-max) {
+  .label {
+    position: relative;
+    left: 0;
+    padding: 0 0 9px;
+  }
+}
