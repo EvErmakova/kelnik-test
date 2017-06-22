@@ -11,104 +11,107 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/scripts.min.js"></script>
+    <!--[if lt IE 9]><script type="text/javascript" src="js/ie8.js"></script><![endif]-->
   </head>
   <body class="page">
-    <div class="container">
-      <h1 class="page__title">Мои заказы</h1>
-      <div class="sorting">Сортировать:<span class="sorting__item js-sorting">по дате</span>|<span class="sorting__item js-sorting">по готовности</span></div>
-      <div class="orders">
-        <div class="orders__item">
-          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
-          <div class="orders__name">Название заказа</div>
-          <div class="orders__text">
-            <p class="orders__status">Статус: в печати</p>
-            <p>Загружен: 11.04.13</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-          </div>
-          <div class="btn orders__btn">Выполнен на 60%</div>
-        </div>
-        <div class="orders__item">
-          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
-          <div class="orders__name">Название заказа</div>
-          <div class="orders__text">
-            <p class="orders__status">Статус: отправлен</p>
-            <p>Загружен: 11.04.13</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-            <p>Цвет: черный</p>
-            <p>Размер: 160 х 70</p>
-          </div>
-          <button class="btn orders__btn">+ Добавить в магазин</button>
-        </div>
-        <div class="orders__item orders__item_fave">
-          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
-          <div class="orders__name">Название заказа</div>
-          <div class="orders__text">
-            <p class="orders__status">Статус: в моем магазине</p>
-            <p>Загружен: 11.04.13</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-          </div>
-          <div class="btn orders__btn">Выполнен на 60%</div>
-        </div>
-        <div class="orders__item">
-          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
-          <div class="orders__name">Название заказа</div>
-          <div class="orders__text">
-            <p class="orders__status">Статус: в печати</p>
-            <p>Загружен: 11.04.13</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-          </div>
-          <div class="btn orders__btn">Выполнен на 60%</div>
-        </div>
-        <div class="orders__item">
-          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
-          <div class="orders__name">Название заказа</div>
-          <div class="orders__text">
-            <p class="orders__status">Статус: в печати</p>
-            <p>Загружен: 11.04.13</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-          </div>
-          <div class="btn orders__btn">Выполнен на 60%</div>
-        </div>
-        <div class="orders__item">
-          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
-          <div class="orders__name">Название заказа</div>
-          <div class="orders__text">
-            <p class="orders__status">Статус: отправлен</p>
-            <p>Загружен: 11.04.13</p>
-            <p>Фотополимер покрашенный</p>
-            <p>Количество экземпляров: 1</p>
-            <p>Цвет: черный</p>
-            <p>Размер: 160 х 70</p>
-          </div>
-          <div class="btn orders__btn">Выполнен на 60%</div>
+    <header>
+      <div class="container">
+        <h1 class="page__title">Мои заказы</h1>
+        <div class="sorting">Сортировать:
+          <button class="sorting__item js-sorting">по дате</button>|
+          <button class="sorting__item js-sorting">по готовности</button>
         </div>
       </div>
+    </header>
+    <div class="container">
+      <section class="orders"><a class="orders__item" href="#">
+          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
+          <div class="orders__name">Название заказа</div>
+          <div class="orders__text">
+            <div class="orders__status">Статус: в печати</div>
+            <div class="orders__text-line">Загружен: 11.04.13</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+          </div>
+          <div class="btn orders__btn orders__btn_ready">Выполнен на 60%</div>
+          <button class="btn orders__btn orders__btn_add">+ Добавить в магазин</button></a><a class="orders__item" href="#">
+          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
+          <div class="orders__name">Название заказа</div>
+          <div class="orders__text">
+            <div class="orders__status">Статус: отправлен</div>
+            <div class="orders__text-line">Загружен: 11.04.13</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+            <div class="orders__text-line">Цвет: черный</div>
+            <div class="orders__text-line">Размер: 160 х 70</div>
+          </div>
+          <div class="btn orders__btn orders__btn_ready">Выполнен на 60%</div>
+          <button class="btn orders__btn orders__btn_add">+ Добавить в магазин</button></a><a class="orders__item orders__item_fave" href="#">
+          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
+          <div class="orders__name">Название заказа</div>
+          <div class="orders__text">
+            <div class="orders__status">Статус: в моем магазине</div>
+            <div class="orders__text-line">Загружен: 11.04.13</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+          </div>
+          <div class="btn orders__btn orders__btn_ready">Выполнен на 60%</div>
+          <button class="btn orders__btn orders__btn_add">+ Добавить в магазин</button></a><a class="orders__item" href="#">
+          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
+          <div class="orders__name">Название заказа</div>
+          <div class="orders__text">
+            <div class="orders__status">Статус: в печати</div>
+            <div class="orders__text-line">Загружен: 11.04.13</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+          </div>
+          <div class="btn orders__btn orders__btn_ready">Выполнен на 60%</div>
+          <button class="btn orders__btn orders__btn_add">+ Добавить в магазин</button></a><a class="orders__item" href="#">
+          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
+          <div class="orders__name">Название заказа</div>
+          <div class="orders__text">
+            <div class="orders__status">Статус: в печати</div>
+            <div class="orders__text-line">Загружен: 11.04.13</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+          </div>
+          <div class="btn orders__btn orders__btn_ready">Выполнен на 60%</div>
+          <button class="btn orders__btn orders__btn_add">+ Добавить в магазин</button></a><a class="orders__item" href="#">
+          <div class="orders__img"><img src="images/order.jpg" alt="Заказ" title="Заказ"></div>
+          <div class="orders__name">Название заказа</div>
+          <div class="orders__text">
+            <div class="orders__status">Статус: отправлен</div>
+            <div class="orders__text-line">Загружен: 11.04.13</div>
+            <div class="orders__text-line">Фотополимер покрашенный</div>
+            <div class="orders__text-line">Количество экземпляров: 1</div>
+            <div class="orders__text-line">Цвет: черный</div>
+            <div class="orders__text-line">Размер: 160 х 70</div>
+          </div>
+          <div class="btn orders__btn orders__btn_ready">Выполнен на 60%</div>
+          <button class="btn orders__btn orders__btn_add">+ Добавить в магазин</button></a></section>
       <div class="center-text">
         <button class="btn btn_big js-scroll-top">Наверх</button>
       </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
       <div class="container">
         <form class="form" method="post" id="reg-form">
-          <fieldset class="form__group">
+          <div class="form__group">
             <label class="label" for="email">Ваш Email:</label>
             <input class="input" type="email" id="email" name="email" required>
             <div class="form__error js-form-error"></div>
-          </fieldset>
-          <fieldset class="form__group">
+          </div>
+          <div class="form__group form__group_checkbox">
             <input class="checkbox" type="checkbox" id="agreement" name="agreement">
             <label class="checkbox__label" for="agreement">Подписаться на новости</label>
-          </fieldset>
-          <button class="btn form__btn" type="submit">Зарегистрироваться</button>
+          </div>
+          <div class="form__btns">
+            <button class="btn form__btn" type="submit">Зарегистрироваться</button>
+          </div>
         </form>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

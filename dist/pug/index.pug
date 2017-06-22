@@ -6,23 +6,19 @@ html
         link(rel="stylesheet" href="css/style.css")
         script(type="text/javascript" src="libs/jquery/dist/jquery.min.js")
         script(type="text/javascript" src="js/scripts.min.js")
-
+        //[if lt IE 9]><script type="text/javascript" src="js/ie8.js"></script><![endif]
     body.page
+
+        block header
+            include includes/header/header
 
         .container
 
             block content
 
-                h1.page__title Мои заказы
+                section.orders
 
-                .sorting Сортировать:
-                    span.sorting__item.js-sorting по дате
-                    ||
-                    span.sorting__item.js-sorting по готовности
-
-                .orders
-
-                    .orders__item
+                    a.orders__item(href="#")
 
                         .orders__img
                             img(src="images/order.jpg" alt="Заказ" title="Заказ")
@@ -31,32 +27,15 @@ html
 
                         .orders__text
 
-                            p.orders__status Статус: в печати
-                            p Загружен: 11.04.13
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
+                            .orders__status Статус: в печати
+                            .orders__text-line Загружен: 11.04.13
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
 
-                        .btn.orders__btn Выполнен на 60%
+                        .btn.orders__btn.orders__btn_ready Выполнен на 60%
+                        button.btn.orders__btn.orders__btn_add + Добавить в магазин
 
-                    .orders__item
-
-                        .orders__img
-                            img(src="images/order.jpg" alt="Заказ" title="Заказ")
-
-                        .orders__name Название заказа
-
-                        .orders__text
-
-                            p.orders__status Статус: отправлен
-                            p Загружен: 11.04.13
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
-                            p Цвет: черный
-                            p Размер: 160 х 70
-
-                        button.btn.orders__btn + Добавить в магазин
-
-                    .orders__item.orders__item_fave
+                    a.orders__item(href="#")
 
                         .orders__img
                             img(src="images/order.jpg" alt="Заказ" title="Заказ")
@@ -65,32 +44,17 @@ html
 
                         .orders__text
 
-                            p.orders__status Статус: в моем магазине
-                            p Загружен: 11.04.13
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
+                            .orders__status Статус: отправлен
+                            .orders__text-line Загружен: 11.04.13
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
+                            .orders__text-line Цвет: черный
+                            .orders__text-line Размер: 160 х 70
 
-                        .btn.orders__btn Выполнен на 60%
+                        .btn.orders__btn.orders__btn_ready Выполнен на 60%
+                        button.btn.orders__btn.orders__btn_add + Добавить в магазин
 
-                    .orders__item
-
-                        .orders__img
-                            img(src="images/order.jpg" alt="Заказ" title="Заказ")
-
-                        .orders__name Название заказа
-
-                        .orders__text
-
-                            p.orders__status Статус: в печати
-                            p Загружен: 11.04.13
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
-
-                        .btn.orders__btn Выполнен на 60%
-
-                    .orders__item
+                    a.orders__item.orders__item_fave(href="#")
 
                         .orders__img
                             img(src="images/order.jpg" alt="Заказ" title="Заказ")
@@ -99,14 +63,15 @@ html
 
                         .orders__text
 
-                            p.orders__status Статус: в печати
-                            p Загружен: 11.04.13
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
+                            .orders__status Статус: в моем магазине
+                            .orders__text-line Загружен: 11.04.13
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
 
-                        .btn.orders__btn Выполнен на 60%
+                        .btn.orders__btn.orders__btn_ready Выполнен на 60%
+                        button.btn.orders__btn.orders__btn_add + Добавить в магазин
 
-                    .orders__item
+                    a.orders__item(href="#")
 
                         .orders__img
                             img(src="images/order.jpg" alt="Заказ" title="Заказ")
@@ -115,14 +80,51 @@ html
 
                         .orders__text
 
-                            p.orders__status Статус: отправлен
-                            p Загружен: 11.04.13
-                            p Фотополимер покрашенный
-                            p Количество экземпляров: 1
-                            p Цвет: черный
-                            p Размер: 160 х 70
+                            .orders__status Статус: в печати
+                            .orders__text-line Загружен: 11.04.13
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
 
-                        .btn.orders__btn Выполнен на 60%
+                        .btn.orders__btn.orders__btn_ready Выполнен на 60%
+                        button.btn.orders__btn.orders__btn_add + Добавить в магазин
+
+                    a.orders__item(href="#")
+
+                        .orders__img
+                            img(src="images/order.jpg" alt="Заказ" title="Заказ")
+
+                        .orders__name Название заказа
+
+                        .orders__text
+
+                            .orders__status Статус: в печати
+                            .orders__text-line Загружен: 11.04.13
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
+
+                        .btn.orders__btn.orders__btn_ready Выполнен на 60%
+                        button.btn.orders__btn.orders__btn_add + Добавить в магазин
+
+                    a.orders__item(href="#")
+
+                        .orders__img
+                            img(src="images/order.jpg" alt="Заказ" title="Заказ")
+
+                        .orders__name Название заказа
+
+                        .orders__text
+
+                            .orders__status Статус: отправлен
+                            .orders__text-line Загружен: 11.04.13
+                            .orders__text-line Фотополимер покрашенный
+                            .orders__text-line Количество экземпляров: 1
+                            .orders__text-line Цвет: черный
+                            .orders__text-line Размер: 160 х 70
+
+                        .btn.orders__btn.orders__btn_ready Выполнен на 60%
+                        button.btn.orders__btn.orders__btn_add + Добавить в магазин
 
                 .center-text
                     button.btn.btn_big.js-scroll-top Наверх

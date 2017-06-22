@@ -1,9 +1,7 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   height: @footer-height;
+  margin-top: 46px;
   padding: 46px 0;
   background: url('@{img}pattern_dark.jpg');
   color: @c-4;
@@ -15,5 +13,11 @@
     height: 2px;
     width: 100%;
     background: url('@{img}border.png');
+  }
+}
+
+@media(max-width: @screen-xs-max) {
+  .footer {
+    margin-top: 25px;
   }
 }

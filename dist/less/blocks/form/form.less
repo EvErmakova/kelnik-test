@@ -1,25 +1,25 @@
 .form {
   position: relative;
-  padding-left: 88px;
   &__group {
     position: relative;
     margin: 0 0 20px;
     padding: 0;
     border: 0;
+    &_checkbox {
+      padding-left: 88px;
+    }
   }
   &__error {
     display: none;
     margin-top: 4px;
+    margin-left: 88px;
     font-size: @fs-small;
     color: @c-2;
   }
+  &__btns {
+    padding-left: 88px;
+  }
   &__btn {
     font-size: @fs-xmedium + 4px;
-  }
-}
-
-@media(max-width: @screen-xxs-max) {
-  .form {
-    padding-left: 0;
   }
 }
